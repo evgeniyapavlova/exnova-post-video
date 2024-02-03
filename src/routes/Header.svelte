@@ -50,6 +50,9 @@
 	header {
 		background-color: var(--color-bg-0);
 		padding: 16px 0;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
 	}
 	.header-wrap {
 		display: flex;

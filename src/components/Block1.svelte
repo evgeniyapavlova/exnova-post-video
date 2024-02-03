@@ -114,10 +114,7 @@
 
 	@media only screen and (max-width: 799px) {
 		.video-preview {
-			position: absolute;
-			transform: scale(0.7);
-			transform-origin: top;
-			right: -16px;
+			display: none;
 		}
 	}
 	@media only screen and (min-width: 800px) {
