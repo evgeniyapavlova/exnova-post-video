@@ -3,6 +3,7 @@
 	import Block2 from '../components/Block2.svelte';
 	import Block3 from '../components/Block3.svelte';
 	import Block4 from '../components/Block4.svelte';
+	import Block5 from '../components/Block5.svelte';
 
 	let itemsBlock3Array = [
 		'Make sure you are an IQ Option trader. <span>Become a trader</span> if you are not',
@@ -65,3 +66,5 @@ on social media,"
 	item3Text="You have to follow the guidelines mentioned in the agreement letter"
 	{item3Points}
 />
+
+<Block5 text1="Claim a reward for what you do best." text2="Participate now!" />
