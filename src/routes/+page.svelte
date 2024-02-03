@@ -1,7 +1,6 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Block1 from '../components/Block1.svelte';
+	import Block2 from '../components/Block2.svelte';
 </script>
 
 <svelte:head>
@@ -9,51 +8,16 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+<Block1
+	h1="Post a video <br/>
+on social media,"
+	h1_span="get $50"
+	h2_1="Post a video to your social media with a hashtag"
+	h2_2="#InvestwithIQ"
+	h2_3="and get a reward on your trading account"
+/>
+<Block2
+	title="IQ Option is paying for your social media videos"
+	highlight="Are you active on social media and enjoy creating video content?<br /> Congrats, you’re in for our pay-per-video offer!"
+	text="Make a 15-60 second video on trading with IQ Option according to our guidelines and share it throughout social networks. In return, we’ll credit a handsome reward to your account — use it for trading or withdraw!"
+/>
