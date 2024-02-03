@@ -1,24 +1,16 @@
-<script lang="ts">
+<script>
+	import { base } from '$app/paths';
+	import { page } from '$app/stores';
+
 	const options = {
 		en: { key: 'en', name: 'Eng' },
-		ar: { key: 'ar', name: 'Ar' }
+		ar: { key: 'ar', name: 'العربية' }
 	};
-	export let value = options.en.key;
-	let checked = true;
-
-	function handleClick(event) {
-		const target = event.target;
-
-		const state = target.getAttribute('aria-checked');
-
-		checked = state === 'true' ? false : true;
-
-		value = checked === true ? options.en.key : options.ar.key;
-	}
 </script>
 
-<div class="switch-lang__container">
-	<button role="switch" aria-checked={checked} on:click={handleClick}>{options[value].name}</button>
+<div class="switch-lang__container" data-current={$page.url.pathname === '/' ? 'en' : 'ar'}>
+	<a href="{base}/">{options.en.name}</a>
+	<a href="{base}/ar">{options.ar.name}</a>
 </div>
 
 <style>
@@ -29,27 +21,35 @@
 		border-radius: 10px;
 		padding: 4px;
 		position: relative;
-	}
-
-	.switch-lang__container button {
-		background-color: #fff;
-		border: none;
-		border-radius: 8px;
+		display: flex;
+		align-items: center;
 		font-weight: bold;
-		text-align: center;
-		width: 50%;
-		height: calc(100% - 8px);
+		justify-content: space-around;
+	}
+	.switch-lang__container:before {
 		position: absolute;
-		left: 4px;
+		content: '';
+		background-color: #fff;
+		border-radius: 8px;
+
+		height: calc(100% - 8px);
+		width: 50%;
+		z-index: 0;
 		transition: left 0.2s ease-in-out;
-		cursor: pointer;
 	}
-
-	.switch-lang__container button[aria-checked='true'] {
+	.switch-lang__container[data-current='en']:before {
 		left: 4px;
 	}
 
-	.switch-lang__container button[aria-checked='false'] {
+	.switch-lang__container[data-current='ar']:before {
 		left: calc(50% - 4px);
+	}
+	a {
+		position: relative;
+		display: block;
+		z-index: 1;
+		width: 50%;
+		text-align: center;
+		cursor: pointer;
 	}
 </style>
