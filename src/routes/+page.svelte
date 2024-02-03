@@ -5,13 +5,13 @@
 		h1: 'Post a video <br/>on social media,',
 		h1_span: 'get $50',
 		h2_1: 'Post a video to your social media with a hashtag',
-		h2_2: '#InvestwithIQ',
+		h2_2: '#InvestwithExnova',
 		h2_3: 'and get a reward on your trading account',
-		block2_title: 'IQ Option is paying for your social media videos',
+		block2_title: 'Exnova is paying for your social media videos',
 		block2_highlight:
 			'Are you active on social media and enjoy creating video content?<br /> Congrats, you’re in for our pay-per-video offer!',
 		block2_text:
-			'Make a 15-60 second video on trading with IQ Option according to our guidelines and share it throughout social networks. In return, we’ll credit a handsome reward to your account — use it for trading or withdraw!',
+			'Make a 15-60 second video on trading with Exnova according to our guidelines and share it throughout social networks. In return, we’ll credit a handsome reward to your account — use it for trading or withdraw!',
 		block3_title: 'How to join',
 		block4_title: 'Main rules',
 		block4_item3Title: 'Post by the rule book',
@@ -19,15 +19,15 @@
 		block5_text1: 'Claim a reward for what you do best.',
 		block5_text2: 'Participate now!',
 		itemsBlock3Array: [
-			'Make sure you are an IQ Option trader. <span>Become a trader</span> if you are not',
+			'Make sure you are an Exnova trader. <span>Become a trader</span> if you are not',
 			'<span>Apply</span> for participation and follow the instructions',
 			'Create a video and post it on your social media according to <span>the rules</span>',
 			'Get your reward!'
 		],
 		itemsBlock4Array: [
 			{
-				title: 'Have an IQ Option account',
-				text: 'You should be an IQ Option trader, the account has to be verified'
+				title: 'Have an Exnova account',
+				text: 'You should be an Exnova trader, the account has to be verified'
 			},
 			{
 				title: 'Sign the agreement',
@@ -36,18 +36,18 @@
 		],
 		item3Points: [
 			{
-				text: 'Follow IQ Option',
+				text: 'Follow Exnova',
 				additional: [
-					{ text: 'Facebook', link: 'https://www.facebook.com/iqoptioneu/' },
-					{ text: 'Instagram', link: 'https://instagram.com/iqoption_official' }
+					{ text: 'Facebook', link: 'https://facebook.com/exnova.en/' },
+					{ text: 'Instagram', link: 'https://www.instagram.com/exnova_trading/' }
 				]
 			},
 			{
 				text: 'Tag 3 friends in our competition post',
-				additional: [{ text: 'View post', link: 'https://www.facebook.com/iqoptioneu/' }]
+				additional: [{ text: 'View post', link: 'https://facebook.com/exnova.en/' }]
 			},
 			{ text: 'Create a video and sign the agreement' },
-			{ text: 'Post the video on your social media with a hashtag <span>#InvestwithIQ</span>' }
+			{ text: 'Post the video on your social media with a hashtag <span>#InvestwithExnova</span>' }
 		]
 	};
 </script>

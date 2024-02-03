@@ -1,6 +1,6 @@
-<script>
+<!-- <script>
 	import LangSwitch from '../components/LangSwitch.svelte';
-</script>
+</script> -->
 
 <header>
 	<div class="container">
@@ -20,7 +20,7 @@
 					/></svg
 				>
 			</a>
-			<LangSwitch />
+			<!-- <LangSwitch /> -->
 		</div>
 	</div>
 </header>
