@@ -8,7 +8,10 @@
 	};
 </script>
 
-<div class="switch-lang__container" data-current={$page.url.pathname === '/' ? 'en' : 'ar'}>
+<div
+	class="switch-lang__container"
+	data-current={$page.url.pathname.indexOf('/ar') !== -1 ? 'ar' : 'en'}
+>
 	<a href="{base}/">{options.en.name}</a>
 	<a href="{base}/ar">{options.ar.name}</a>
 </div>
