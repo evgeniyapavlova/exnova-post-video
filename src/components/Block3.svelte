@@ -12,7 +12,7 @@
 <div class="container">
 	<div class="title">{title}</div>
 	<div class="wrap">
-		{#each items as item, index (item.id)}
+		{#each items as item, index}
 			<div class="item item-block-3">
 				<img src={images[index]} alt="Block 3 illustration {index + 1}" />
 				{@html item}
