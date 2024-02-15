@@ -3,7 +3,7 @@
 	let currentYear = new Date().getFullYear();
 
 	const pathArray = $page.url.pathname.split('/');
-	const currentLang = pathArray[pathArray.length - 1];
+	const currentLang = pathArray[pathArray.length - 1] || 'en';
 	const langs_map = {
 		en: {
 			text1:
@@ -45,7 +45,6 @@
 </script>
 
 <footer>
-	{currentLang}
 	<div class="footer-top">
 		<div class="container">
 			<a href="https://exnova.com/">
@@ -102,7 +101,7 @@
 				Digital Smart LLC. Address: Lighthouse Trust Nevis Ltd, Suite 1, A.L. Evelyn Ltd Building,
 				Main Street, Charlestown, Nevis
 			</p>
-			<p>{langs_map[currentLang].text2}</p>
+			<p>{@html langs_map[currentLang].text2}</p>
 		</div>
 	</div>
 	<div class="footer-bottom">

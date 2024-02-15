@@ -1,4 +1,5 @@
 <script>
+	import { slide } from 'svelte/transition'
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 

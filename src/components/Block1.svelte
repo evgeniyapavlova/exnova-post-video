@@ -1,13 +1,41 @@
 <script>
 	import Button_50 from './Button_50.svelte';
+	import LogoSvg from './LogoSvg.svelte';
 
-	import block_1_img from '$lib/images/block_1_img.png';
 	import yellow_img from '$lib/images/yellow.png';
 	import pink_img from '$lib/images/pink.png';
 	import violet_img from '$lib/images/violet.png';
-	import income_img from '$lib/images/income.png';
 
-	export let h1, h1_span, h2_1, h2_2, h2_3;
+	import webp_id from '$lib/images/id_header_img_x2.webp';
+	import jpg_id from '$lib/images/id_header_img_x2.jpg';
+
+	import webp_pt from '$lib/images/pt_header_img_x2.webp';
+	import jpg_pt from '$lib/images/pt_header_img_x2.jpg';
+
+	import webp_es from '$lib/images/es_header_img_x2.webp';
+	import jpg_es from '$lib/images/es_header_img_x2.jpg';
+
+	export let content, btn, lang;
+	const { h1, h1_span, h2, income } = content;
+
+	const images_map = {
+		en: {
+			webp: webp_es,
+			jpg: jpg_es
+		},
+		es: {
+			webp: webp_es,
+			jpg: jpg_es
+		},
+		id: {
+			webp: webp_id,
+			jpg: jpg_id
+		},
+		pt: {
+			webp: webp_pt,
+			jpg: jpg_pt
+		}
+	};
 </script>
 
 <div class="block_1">
@@ -16,21 +44,32 @@
 			<div class="title">
 				<h1>
 					{@html h1}
-					<br /><span>{h1_span}</span>
+					<br /><span>{@html h1_span}</span>
 				</h1>
 				<h2>
-					{h2_1}
-					<span>{h2_2}</span>
-					{h2_3}
+					{@html h2}
 				</h2>
-				<Button_50 />
+				<Button_50 text={btn} />
 			</div>
 			<div class="video-preview">
-				<img src={block_1_img} class="main-img" alt="Woman with the phone and the laptop" />
+				<div class="picture-wrap">
+					<picture>
+						<source srcset={images_map[lang].webp} type="image/webp" />
+						<img src={images_map[lang].jpg} alt="A girl with a laptop" />
+					</picture>
+				</div>
 				<img src={yellow_img} alt="Yellow icon" class="abs-img img-yellow" />
 				<img src={pink_img} alt="Pink icon" class="abs-img img-pink" />
 				<img src={violet_img} alt="Violet icon" class="abs-img img-violet" />
-				<img src={income_img} alt="Your Income" class="img-income" />
+				<div class="income-block">
+					<div class="logo-wrap">
+						<LogoSvg height={26} width={26} />
+					</div>
+					<div class="text">
+						<div class="text-money">$50</div>
+						<p>{income}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,12 +96,21 @@
 		color: var(--color-exnova-highlight);
 	}
 
-	.main-img {
-		width: 342px;
+	.picture-wrap {
 		border-radius: 35px;
-		position: relative;
+		width: 340px;
+		height: 510px;
+		overflow: hidden;
 		z-index: 1;
+		position: relative;
 	}
+
+	.picture-wrap picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
 	.video-preview {
 		position: relative;
 	}
@@ -94,22 +142,51 @@
 		margin-bottom: 32px;
 	}
 
-	h2 span {
-		color: #fff;
-	}
-
-	.img-income {
-		position: absolute;
-		width: 150px;
-		left: -30px;
-		z-index: 1;
-		top: 33%;
-		transition: left 0.2s;
-	}
-
 	.title {
 		padding-bottom: 48px;
 		text-align: center;
+	}
+
+	.income-block {
+		width: 150px;
+		height: 68px;
+		background-color: #fff;
+		border-radius: 12px;
+		position: absolute;
+		top: 33%;
+		z-index: 1;
+		left: -30px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 12px;
+		box-sizing: border-box;
+		transition: left 0.2s;
+	}
+
+	.income-block .logo-wrap {
+		width: 42px;
+		height: 42px;
+		background-color: #eaeaea;
+		border-radius: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.income-block .text {
+		padding-left: 10px;
+	}
+
+	.income-block .text-money {
+		color: #0d1d2d;
+		font-weight: 700;
+		margin-bottom: 2px;
+	}
+
+	.income-block p {
+		color: #808d9a;
+		font-size: 12px;
 	}
 
 	@media only screen and (max-width: 799px) {
@@ -125,13 +202,14 @@
 		}
 
 		.block_1 {
-			padding-top: 150px;
+			padding-top: 120px;
+			padding-bottom: 64px;
 		}
 
 		.inner-container {
 			display: flex;
 			justify-content: space-between;
-			align-items: flex-start;
+			align-items: center;
 		}
 	}
 
@@ -139,11 +217,20 @@
 		.video-preview {
 			padding-right: 40px;
 		}
-		.img-income {
+		.income-block {
 			left: -50px;
 		}
+	}
+
+	@media only screen and (min-width: 1200px) {
 		h1 {
 			font-size: 64px;
+		}
+		.inner-container {
+			align-items: flex-start;
+		}
+		.block_1 {
+			padding-top: 150px;
 		}
 	}
 
@@ -151,7 +238,7 @@
 		.video-preview {
 			padding-right: 80px;
 		}
-		.img-income {
+		.income-block {
 			left: -105px;
 		}
 	}

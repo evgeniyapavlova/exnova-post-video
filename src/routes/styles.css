@@ -33,7 +33,7 @@ p {
 
 
 .container {
-	width: 1300px;
+	width: 1280px;
 	margin: 0 auto;
 	max-width: 90%;
 }
@@ -46,6 +46,10 @@ a {
 
 h1 {
 	margin: 0;
+}
+
+h2 span {
+	color: #fff;
 }
 
 button {

@@ -1,12 +1,13 @@
 <script>
-	export let title, items, item3Title, item3Text, item3Points;
+	export let content;
+	const { title, items1, item3Title, item3Text, items2 } = content;
 </script>
 
 <div class="wrap">
 	<div class="container">
 		<div class="inner-container">
 			<div class="title">{title}</div>
-			{#each items as item}
+			{#each items1 as item}
 				<div class="wrap1 wrap1-flex">
 					<div class="item-title">{item.title}</div>
 					<div class="item-text">{item.text}</div>
@@ -18,7 +19,7 @@
 					<div class="item-text">{item3Text}</div>
 				</div>
 				<div class="gray-block-wrap">
-					{#each item3Points as item, index}
+					{#each items2 as item, index}
 						<div class="gray-block">
 							<div class="number">{index + 1}</div>
 							<div class="gray-block-text mb8">{@html item.text}</div>
@@ -157,7 +158,7 @@
 		}
 		.gray-block {
 			width: 100%;
-            text-align: center;
+			text-align: center;
 		}
 		.number {
 			width: 40px;

@@ -4,7 +4,8 @@
 	import item_3_img from '$lib/images/block_3_item_3.png';
 	import item_4_img from '$lib/images/block_3_item_4.png';
 
-	export let title, items;
+	export let content;
+	const { title, items } = content;
 
 	let images = [item_1_img, item_2_img, item_3_img, item_4_img];
 </script>
