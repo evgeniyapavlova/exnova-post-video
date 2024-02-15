@@ -1,53 +1,109 @@
 <script>
-	import { slide } from 'svelte/transition'
+	import { slide } from 'svelte/transition';
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 
+	import Globus from './svg/Globus.svelte';
+
+	export let lang;
+
 	const options = {
-		en: { key: 'en', name: 'Eng' },
-		ar: { key: 'ar', name: 'العربية' }
+		en: { key: 'en', name: 'English' },
+		id: { key: 'id', name: 'Bahasa Indonesia' },
+		es: { key: 'es', name: 'Español' },
+		pt: { key: 'pt', name: 'Português' }
 	};
+
+	let isExpanded = false;
+
+	// function clickHandler() {
+	// 	isExpanded = !isExpanded;
+	// }
 </script>
 
-<div
-	class="switch-lang__container"
-	data-current={$page.url.pathname.indexOf('/ar') !== -1 ? 'ar' : 'en'}
->
-	<a href="{base}/">{options.en.name}</a>
-	<a href="{base}/ar">{options.ar.name}</a>
+<div class="switch-lang__container" data-current-lang={lang}>
+	<button on:click={() => (isExpanded = !isExpanded)} on:mouseenter={() => (isExpanded = true)}
+		>{options[lang].name}
+		<Globus />
+	</button>
+	{#if isExpanded}
+		<menu transition:slide on:mouseleave={() => (isExpanded = false)}>
+			<div class="menu-inner">
+				<div class="arrow-up"></div>
+				{#each Object.values(options) as { key, name }, i}
+					{#if key === 'en'}<a href="{base}/">{name}</a>
+					{:else}
+						<a href="{base}/{key}">{name}</a>
+					{/if}
+				{/each}
+			</div>
+		</menu>
+	{/if}
 </div>
 
 <style>
-	.switch-lang__container {
-		width: 160px;
+	.arrow-up {
+		position: absolute;
+		top: -6px;
+		left: 50%;
+		width: 0;
+		height: 0;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid white;
+		transform: translateX(-50%);
+	}
+	button {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		color: #1e1e1e;
+		font-size: 16px;
+		cursor: pointer;
+		padding: 4px 24px;
 		height: 40px;
-		background-color: var(--color-switch);
 		border-radius: 10px;
-		padding: 4px;
+		background-color: #fff;
+	}
+
+	menu {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.menu-inner {
+		background: white;
+		border-radius: 6px;
+		margin-top: 52px;
+		position: relative;
+	}
+
+	menu a {
+		display: block;
+		width: 100%;
+		padding: 16px;
+		box-sizing: border-box;
+		border-radius: 6px;
+	}
+
+	menu a:hover {
+		color: white;
+		background-color: var(--color-bg-0);
+	}
+
+	.switch-lang__container {
 		position: relative;
 		display: flex;
 		align-items: center;
 		font-weight: bold;
 		justify-content: space-around;
 	}
-	.switch-lang__container:before {
-		position: absolute;
-		content: '';
-		background-color: #fff;
-		border-radius: 8px;
 
-		height: calc(100% - 8px);
-		width: 50%;
-		z-index: 0;
-		transition: left 0.2s ease-in-out;
-	}
-	.switch-lang__container[data-current='en']:before {
-		left: 4px;
-	}
-
-	.switch-lang__container[data-current='ar']:before {
-		left: calc(50% - 4px);
-	}
 	a {
 		position: relative;
 		display: block;
@@ -55,5 +111,16 @@
 		width: 50%;
 		text-align: center;
 		cursor: pointer;
+	}
+
+	@media only screen and (max-width: 600px) {
+		button {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: 80px;
+			display: inline-block;
+			padding: 4px 12px;
+		}
 	}
 </style>

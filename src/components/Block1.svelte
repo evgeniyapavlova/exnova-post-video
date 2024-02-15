@@ -1,6 +1,6 @@
 <script>
 	import Button_50 from './Button_50.svelte';
-	import LogoSvg from './LogoSvg.svelte';
+	import LogoSvg from './svg/LogoSvg.svelte';
 
 	import yellow_img from '$lib/images/yellow.png';
 	import pink_img from '$lib/images/pink.png';

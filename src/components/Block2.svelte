@@ -1,5 +1,5 @@
 <script>
-	import LogoSvg from './LogoSvg.svelte';
+	import LogoSvg from './svg/LogoSvg.svelte';
 	import violet_2_img from '$lib/images/violet_2.png';
 	import blue_img from '$lib/images/blue.png';
 
