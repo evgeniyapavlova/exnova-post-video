@@ -1,6 +1,8 @@
-<!-- <script>
-	import LangSwitch from '../components/LangSwitch.svelte';
-</script> -->
+<script>
+	import LangSwitch from './LangSwitch.svelte';
+
+	export let lang;
+</script>
 
 <header>
 	<div class="container">
@@ -20,7 +22,7 @@
 					/></svg
 				>
 			</a>
-			<!-- <LangSwitch /> -->
+			<LangSwitch {lang} />
 		</div>
 	</div>
 </header>

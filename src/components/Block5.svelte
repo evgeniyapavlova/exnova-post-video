@@ -1,7 +1,8 @@
 <script>
 	import Button_50 from './Button_50.svelte';
 
-	export let text1, text2;
+	export let content, btn;
+	const { text1, text2 } = content;
 </script>
 
 <div class="wrap">
@@ -11,7 +12,7 @@
 				{text1}
 			</div>
 			<div class="text2">{text2}</div>
-			<Button_50 />
+			<Button_50 text={btn} />
 		</div>
 	</div>
 </div>
@@ -71,9 +72,9 @@
 	@media only screen and (max-width: 630px) {
 		.inner-container {
 			padding: 32px 24px 120px;
-            background-size: 100%;
+			background-size: 100%;
 		}
-        .wrap {
+		.wrap {
 			padding: 48px 0;
 		}
 	}

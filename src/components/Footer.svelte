@@ -1,5 +1,47 @@
 <script>
+	import { page } from '$app/stores';
 	let currentYear = new Date().getFullYear();
+
+	const pathArray = $page.url.pathname.split('/');
+	const currentLang = pathArray[pathArray.length - 1] || 'en';
+	const langs_map = {
+		en: {
+			text1:
+				'The financial products offered by the company carry a high level of risk and can result in the loss of all your funds. You should never invest money that you cannot afford to lose.',
+			text2:
+				'Payment transactions are managed by: DIGITAL SMART CY LIMITED <br />Address: 6 Koutsoventi street, 4101 Agios Athanasios Limassol, Cyprus <br />Company business number: HE 410889',
+			aff_program: 'Affiliate Program',
+			privacy: 'Privacy Policy',
+			terms: 'Terms &amp; Conditions'
+		},
+		es: {
+			text1:
+				'Los productos financieros ofrecidos por la compañía conllevan un alto nivel de riesgo y pueden ocasionar la pérdida de todos tus fondos. Nunca deberás invertir dinero que no puedas permitirte perder.',
+			text2:
+				'Las transacciones de los pagos están gestionadas por: DIGITAL SMART CY LIMITED<br />Dirección: 6 Koutsoventi street, 4101 Agios Athanasios, Limasol, Chipre.<br />Número registral de la compañía: HE 410889',
+			aff_program: 'Programa de afiliados',
+			privacy: 'Política de privacidad',
+			terms: 'Términos y Condiciones'
+		},
+		pt: {
+			text1:
+				'Os produtos financeiros fornecidos pela empresa apresentam um alto nível de risco e podem resultar na perda de todos os seus fundos. Você nunca deve investir dinheiro que não pode perder.',
+			text2:
+				'As transações de pagamento são gerenciadas por: DIGITAL SMART CY LIMITED<br />Endereço: 6 Koutsoventi street, 4101 Agios Athanasios Limassol, Chipre<br />Número comercial da empresa: HE 410889',
+			aff_program: 'Programa de afiliados',
+			privacy: 'Política de privacidade',
+			terms: 'Termos e Condições'
+		},
+		id: {
+			text1:
+				'Produk finansial yang ditawarkan perusahaan ini mengandung risiko tingkat tinggi dan dapat menyebabkan hilangnya semua dana Anda. Jangan menginvestasikan uang jika Anda tidak sanggup kehilangan uang tersebut.',
+			text2:
+				'Transaksi pembayaran dikelola oleh: DIGITAL SMART CY LIMITED<br />Alamat: 6 Koutsoventi street, 4101 Agios Athanasios Limassol, Cyprus<br />Nomor bisnis perusahaan: HE 410889',
+			aff_program: 'Program Affiliate',
+			privacy: 'Kebijakan Privasi',
+			terms: 'Syarat & Ketentuan'
+		}
+	};
 </script>
 
 <footer>
@@ -53,18 +95,13 @@
 	<div class="footer-middle">
 		<div class="container">
 			<p>
-				The financial products offered by the company carry a high level of risk and can result in
-				the loss of all your funds. You should never invest money that you cannot afford to lose.
+				{langs_map[currentLang].text1}
 			</p>
 			<p style="margin-top: 40px; margin-bottom: 16px;">
 				Digital Smart LLC. Address: Lighthouse Trust Nevis Ltd, Suite 1, A.L. Evelyn Ltd Building,
 				Main Street, Charlestown, Nevis
 			</p>
-			<p>
-				Payment transactions are managed by: DIGITAL SMART CY LIMITED <br />
-				Address: 6 Koutsoventi street, 4101 Agios Athanasios Limassol, Cyprus <br />
-				Company business number: HE 410889
-			</p>
+			<p>{@html langs_map[currentLang].text2}</p>
 		</div>
 	</div>
 	<div class="footer-bottom">
@@ -77,19 +114,19 @@
 					href="https://affstore.com/en/lp/exnova/"
 					target="_blank"
 					data-id="footer-link-affstore"
-					data-test-id="affstore-link">Affiliate Program</a
+					data-test-id="affstore-link">{langs_map[currentLang].aff_program}</a
 				>
 				<a
 					href="https://exnova.com/terms/privacy-policy"
 					target="_blank"
 					data-id="footer-link-policy"
-					data-test-id="privacy-policy">Privacy Policy</a
+					data-test-id="privacy-policy">{langs_map[currentLang].privacy}</a
 				>
 				<a
 					href="https://exnova.com/terms/terms-conditions"
 					target="_blank"
 					data-id="footer-link-terms"
-					data-test-id="terms">Terms &amp; Conditions</a
+					data-test-id="terms">{langs_map[currentLang].terms}</a
 				> <a href="mailto:support@exnova.com">support@exnova.com</a>
 			</div>
 		</div>
