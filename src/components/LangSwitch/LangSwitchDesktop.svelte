@@ -1,27 +1,15 @@
 <script>
 	import { slide } from 'svelte/transition';
 	import { base } from '$app/paths';
-	import { page } from '$app/stores';
+	import Globus from '../svg/Globus.svelte';
+	import Links from './Links.svelte';
 
-	import Globus from './svg/Globus.svelte';
-
-	export let lang;
-
-	const options = {
-		en: { key: 'en', name: 'English' },
-		id: { key: 'id', name: 'Bahasa Indonesia' },
-		es: { key: 'es', name: 'Español' },
-		pt: { key: 'pt', name: 'Português' }
-	};
+	export let options, lang;
 
 	let isExpanded = false;
-
-	// function clickHandler() {
-	// 	isExpanded = !isExpanded;
-	// }
 </script>
 
-<div class="switch-lang__container" data-current-lang={lang}>
+<div class="switch-lang__container">
 	<button on:click={() => (isExpanded = !isExpanded)} on:mouseenter={() => (isExpanded = true)}
 		>{options[lang].name}
 		<Globus />
@@ -30,12 +18,7 @@
 		<menu transition:slide on:mouseleave={() => (isExpanded = false)}>
 			<div class="menu-inner">
 				<div class="arrow-up"></div>
-				{#each Object.values(options) as { key, name }, i}
-					{#if key === 'en'}<a href="{base}/">{name}</a>
-					{:else}
-						<a href="{base}/{key}">{name}</a>
-					{/if}
-				{/each}
+				<Links {options} {lang} />
 			</div>
 		</menu>
 	{/if}
@@ -81,19 +64,6 @@
 		border-radius: 6px;
 		margin-top: 52px;
 		position: relative;
-	}
-
-	menu a {
-		display: block;
-		width: 100%;
-		padding: 16px;
-		box-sizing: border-box;
-		border-radius: 6px;
-	}
-
-	menu a:hover {
-		color: white;
-		background-color: var(--color-bg-0);
 	}
 
 	.switch-lang__container {
