@@ -73,15 +73,6 @@
 		justify-content: space-around;
 	}
 
-	a {
-		position: relative;
-		display: block;
-		z-index: 1;
-		width: 50%;
-		text-align: center;
-		cursor: pointer;
-	}
-
 	@media only screen and (max-width: 600px) {
 		button {
 			white-space: nowrap;
