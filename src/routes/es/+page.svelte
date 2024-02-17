@@ -1,5 +1,6 @@
 <script>
-	import { base } from '$app/paths';
+	import fb_meta_img_es from '$lib/images/fb_meta_img_es.jpg';
+	import tw_meta_img_es from '$lib/images/tw_meta_img_es.jpg';
 	import AllBlocks from '../../components/AllBlocks.svelte';
 
 	const es_content = {
@@ -69,12 +70,12 @@
 	<meta name="description" content="Exnova - Publica un vídeo en redes sociales y ganar US$ 50" />
 	<meta property="og:title" content="Exnova - Publica un vídeo" />
 	<meta property="og:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
-	<meta property="og:image" content="{base}/lib/images/fb_meta_img_es.jpg" />
+	<meta property="og:image" content={fb_meta_img_es} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Publica un vídeo" />
 	<meta name="twitter:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
-	<meta name="twitter:image" content="{base}/lib/images/tw_meta_img_es.jpg" />
+	<meta name="twitter:image" content={tw_meta_img_es} />
 </svelte:head>
 
 <AllBlocks lang="es" content={es_content} />
