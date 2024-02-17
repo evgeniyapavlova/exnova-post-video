@@ -40,7 +40,7 @@
 			],
 			items2: [
 				{
-					text: 'Follow Exnova',
+					text: 'Ikuti Exnova',
 					additional: [
 						{ text: 'Facebook', link: 'https://facebook.com/exnova.en/' },
 						{ text: 'Instagram', link: 'https://www.instagram.com/exnova_trading/' }
@@ -48,7 +48,7 @@
 				},
 				{
 					text: 'Tag 3 teman di postingan kompetisi ini',
-					additional: [{ text: 'View post', link: 'https://facebook.com/exnova.en/' }]
+					additional: [{ text: 'Lihat Postingan', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Siap ngonten dan tanda tangani perjanjiannya' },
 				{

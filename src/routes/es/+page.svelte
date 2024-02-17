@@ -29,7 +29,7 @@
 			items1: [
 				{
 					title: 'Tener una cuenta Exnova',
-					text: 'Después de registrarse para participar, debe firmar la carta de acuerdo y enviárnosla a través de la dirección de correo electrónico vinculada a su cuenta.'
+					text: 'Debes ser un operador de Exnova, la cuenta debe estar verificada'
 				},
 				{
 					title: 'Firma el acuerdo',
@@ -48,7 +48,7 @@
 				},
 				{
 					text: 'Etiqueta a 3 amigos en nuestra publicación del concurso',
-					additional: [{ text: 'View post', link: 'https://www.facebook.com/iqoptioneu/' }]
+					additional: [{ text: 'Ver publicacion', link: 'https://www.facebook.com/iqoptioneu/' }]
 				},
 				{ text: 'Crea un vídeo y firma el acuerdo' },
 				{
