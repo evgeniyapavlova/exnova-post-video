@@ -27,7 +27,7 @@
 		padding: 48px;
 		border-radius: 40px;
 		color: #fff;
-		background-image: url('/src/lib/images/bgr_block_5.png');
+		background-image: url('/src/lib/images/bgr_block_5.webp');
 		background-position: 100% 100%;
 		background-size: 720px;
 		background-repeat: no-repeat;

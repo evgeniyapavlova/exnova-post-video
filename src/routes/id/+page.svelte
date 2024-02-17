@@ -63,6 +63,14 @@
 <svelte:head>
 	<title>Exnova - Posting video di sosmed, dapatkan $50</title>
 	<meta name="description" content="Exnova - Posting video di sosmed, dapatkan $50" />
+	<meta property="og:title" content="Exnova - Posting video" />
+	<meta property="og:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_id.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Posting video" />
+	<meta name="twitter:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_id.jpg" />
 </svelte:head>
 
 <AllBlocks lang="id" content={id_content} />

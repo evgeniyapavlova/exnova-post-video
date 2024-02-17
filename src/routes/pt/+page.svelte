@@ -67,6 +67,15 @@
 <svelte:head>
 	<title>Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50</title>
 	<meta name="description" content="Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50" />
+
+	<meta property="og:title" content="Exnova - Poste um vídeo" />
+	<meta property="og:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_pt.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Poste um vídeo" />
+	<meta name="twitter:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_pt.jpg" />
 </svelte:head>
 
 <AllBlocks lang="pt" content={pt_content} />
