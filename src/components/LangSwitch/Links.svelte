@@ -20,6 +20,7 @@
 		box-sizing: border-box;
 		border-radius: 6px;
 		font-size: 16px;
+		text-align: center;
 	}
 
 	.active a {
