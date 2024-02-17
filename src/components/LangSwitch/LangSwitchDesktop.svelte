@@ -1,6 +1,5 @@
 <script>
 	import { slide } from 'svelte/transition';
-	import { base } from '$app/paths';
 	import Globus from '../svg/Globus.svelte';
 	import Links from './Links.svelte';
 
