@@ -103,6 +103,7 @@
 		overflow: hidden;
 		z-index: 1;
 		position: relative;
+		background-color: rgba(255,255,255,0.2);
 	}
 
 	.picture-wrap picture img {

@@ -29,7 +29,7 @@
 			items1: [
 				{
 					title: 'Tener una cuenta Exnova',
-					text: 'Después de registrarse para participar, debe firmar la carta de acuerdo y enviárnosla a través de la dirección de correo electrónico vinculada a su cuenta.'
+					text: 'Debes ser un operador de Exnova, la cuenta debe estar verificada'
 				},
 				{
 					title: 'Firma el acuerdo',
@@ -48,7 +48,7 @@
 				},
 				{
 					text: 'Etiqueta a 3 amigos en nuestra publicación del concurso',
-					additional: [{ text: 'View post', link: 'https://www.facebook.com/iqoptioneu/' }]
+					additional: [{ text: 'Ver publicacion', link: 'https://www.facebook.com/iqoptioneu/' }]
 				},
 				{ text: 'Crea un vídeo y firma el acuerdo' },
 				{
@@ -66,6 +66,14 @@
 <svelte:head>
 	<title>Exnova - Publica un vídeo en redes sociales y ganar US$ 50</title>
 	<meta name="description" content="Exnova - Publica un vídeo en redes sociales y ganar US$ 50" />
+	<meta property="og:title" content="Exnova - Publica un vídeo" />
+	<meta property="og:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_es.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Publica un vídeo" />
+	<meta name="twitter:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_es.jpg" />
 </svelte:head>
 
 <AllBlocks lang="es" content={es_content} />

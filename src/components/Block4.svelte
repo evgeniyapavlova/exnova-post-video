@@ -151,7 +151,7 @@
 
 	@media only screen and (max-width: 630px) {
 		.inner-container {
-			padding: 24px;
+			padding: 48px 24px 24px;
 		}
 		.title {
 			font-size: 30px;

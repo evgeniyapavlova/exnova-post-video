@@ -32,7 +32,7 @@
 			items1: [
 				{
 					title: 'Tenha uma conta Exnova',
-					text: 'Depois de se inscrever para participação, você precisa assinar a carta de concordância e enviá-la de volta para nós através do endereço de e-mail vinculado à sua conta'
+					text: 'Você deve ser um trader Exnova, a conta deve ser verificada'
 				},
 				{
 					title: 'Assine o acordo',
@@ -49,11 +49,11 @@
 				},
 				{
 					text: 'Marcar 3 amigos na postagem da nossa competição',
-					additional: [{ text: 'View post', link: 'https://facebook.com/exnova.en/' }]
+					additional: [{ text: 'Ver postagem', link: 'https://facebook.com/exnova.en/' }]
 				},
-				{ text: '!!!!!! Create a video and sign the agreement' },
+				{ text: 'Crie um vídeo e assine o contrato' },
 				{
-					text: '!!!!!! Post the video on your social media with a hashtag <span>#InvestwithExnova</span>'
+					text: 'Poste o vídeo em suas redes sociais com a hashtag <span>#InvestwithExnova</span>'
 				}
 			]
 		},
@@ -67,6 +67,15 @@
 <svelte:head>
 	<title>Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50</title>
 	<meta name="description" content="Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50" />
+
+	<meta property="og:title" content="Exnova - Poste um vídeo" />
+	<meta property="og:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_pt.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Poste um vídeo" />
+	<meta name="twitter:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_pt.jpg" />
 </svelte:head>
 
 <AllBlocks lang="pt" content={pt_content} />

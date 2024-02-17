@@ -63,6 +63,14 @@
 <svelte:head>
 	<title>Exnova - Post a video on social media, get $50</title>
 	<meta name="description" content="Exnova - Post a video on social media, get $50" />
+	<meta property="og:title" content="Exnova - Post a video" />
+	<meta property="og:description" content="Post a video on social media, get $50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_en.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Post a video" />
+	<meta name="twitter:description" content="Post a video on social media, get $50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_en.jpg" />
 </svelte:head>
 
 <AllBlocks lang="en" content={en_content} />

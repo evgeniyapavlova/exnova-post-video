@@ -47,7 +47,7 @@
 <footer>
 	<div class="footer-top">
 		<div class="container">
-			<a href="https://exnova.com/">
+			<a href="https://exnova.com/" alt="Exnova main site">
 				<svg xmlns="http://www.w3.org/2000/svg" width="168" height="40" fill="#141822"
 					><path
 						d="M18.26 7.273V0h3.653v7.273h-3.652zm21.914 14.545H32.87v-3.636h7.304v3.636zm-14.922-9.532l-5.165 5.143-5.165-5.143-2.582 2.572L17.505 20l2.582-2.571L22.669 20l5.165-5.142-2.582-2.572zm-5.165 10.286l5.165 5.142 2.582-2.571L22.67 20l-2.582 2.572zm-7.748 2.57L17.505 20l2.582 2.572-5.165 5.142-2.583-2.571zm5.922 7.585V40h3.652v-7.273h-3.652zM7.304 21.818H0v-3.636h7.304v3.636zM33 4.572l-5.165 5.143 2.583 2.571 5.165-5.142L33 4.572zm-2.582 23.142l5.165 5.142L33 35.428l-5.165-5.143 2.583-2.571zM12.34 30.285l-2.583-2.571-5.165 5.142 2.583 2.572 5.165-5.143zM7.175 4.572l5.165 5.143-2.583 2.571-5.165-5.142 2.583-2.572zm50.63 13.565v-3.563h13.538v-3.665H53.565v18.183H71.47v-3.665H57.806v-3.753h12.99v-3.537h-12.99zm25.702 1.648l-3.654-3.753H74.67l6.087 6.226-6.8 6.834h5.183l4.367-4.387 4.368 4.387h5.183l-6.8-6.834 6.087-6.226h-5.183l-3.655 3.753zm12.058 9.307v-13.06h4.177v1.762c.751-1.154 2.165-2.143 4.776-2.143 5.348 0 7.297 3.031 7.297 7.177v6.264h-4.177v-6.264c0-2.168-.905-3.981-3.948-3.981s-3.948 1.813-3.948 3.981v6.264h-4.177z"
@@ -63,7 +63,7 @@
 				>
 			</a>
 			<div class="socials">
-				<a href="https://www.instagram.com/exnova_trading/" data-test-id="social-instagram">
+				<a href="https://www.instagram.com/exnova_trading/" alt="Exnova Instagram account">
 					<svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"
 						><path
 							fill-rule="evenodd"
@@ -73,7 +73,7 @@
 						/></svg
 					></a
 				>
-				<a href="https://facebook.com/exnova.en/" data-test-id="social-fb">
+				<a href="https://facebook.com/exnova.en/" alt="Exnova Facebook account">
 					<svg width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"
 						><path
 							d="M13.295.005L10.168 0C6.654 0 4.383 2.318 4.383 5.906V8.63H1.238a.49.49 0 0 0-.492.49v3.945c0 .27.22.49.492.49h3.145v9.956c0 .27.22.489.492.489h4.103a.49.49 0 0 0 .492-.49v-9.956h3.676a.49.49 0 0 0 .492-.489l.002-3.946a.489.489 0 0 0-.492-.49H9.47V6.322c0-1.11.265-1.673 1.718-1.673h2.107a.49.49 0 0 0 .491-.49V.494a.49.49 0 0 0-.49-.489z"
@@ -81,7 +81,7 @@
 						/></svg
 					></a
 				>
-				<a href="https://twitter.com/exnova_trading" data-test-id="social-twitter">
+				<a href="https://twitter.com/exnova_trading" alt="Exnova Twitter account">
 					<svg width="27" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"
 						><path
 							d="M26.761 2.486c-.966.422-1.995.701-3.068.837A5.273 5.273 0 0 0 26.035.394a10.673 10.673 0 0 1-3.376 1.283A5.349 5.349 0 0 0 18.769 0c-2.948 0-5.322 2.381-5.322 5.3 0 .42.036.824.124 1.208A15.097 15.097 0 0 1 2.595.966a5.314 5.314 0 0 0-.73 2.678 5.3 5.3 0 0 0 2.366 4.404 5.279 5.279 0 0 1-2.406-.653v.058c0 2.575 1.846 4.714 4.267 5.207a5.34 5.34 0 0 1-1.396.174c-.341 0-.686-.02-1.009-.09a5.372 5.372 0 0 0 4.976 3.69 10.734 10.734 0 0 1-6.602 2.26c-.437 0-.856-.018-1.275-.072A15.045 15.045 0 0 0 8.956 21c9.798 0 15.156-8.077 15.156-15.078 0-.234-.008-.46-.02-.685a10.594 10.594 0 0 0 2.67-2.75z"
@@ -110,23 +110,14 @@
 				Digital Smart LLC. © {currentYear}
 			</div>
 			<div class="terms-links">
-				<a
-					href="https://affstore.com/en/lp/exnova/"
-					target="_blank"
-					data-id="footer-link-affstore"
-					data-test-id="affstore-link">{langs_map[currentLang].aff_program}</a
+				<a href="https://affstore.com/en/lp/exnova/" target="_blank" alt="Affiliate Program"
+					>{langs_map[currentLang].aff_program}</a
 				>
-				<a
-					href="https://exnova.com/terms/privacy-policy"
-					target="_blank"
-					data-id="footer-link-policy"
-					data-test-id="privacy-policy">{langs_map[currentLang].privacy}</a
+				<a href="https://exnova.com/terms/privacy-policy" target="_blank" alt="Privacy Policy"
+					>{langs_map[currentLang].privacy}</a
 				>
-				<a
-					href="https://exnova.com/terms/terms-conditions"
-					target="_blank"
-					data-id="footer-link-terms"
-					data-test-id="terms">{langs_map[currentLang].terms}</a
+				<a href="https://exnova.com/terms/terms-conditions" target="_blank" alt="Terms & Conditions"
+					>{@html langs_map[currentLang].terms}</a
 				> <a href="mailto:support@exnova.com">support@exnova.com</a>
 			</div>
 		</div>

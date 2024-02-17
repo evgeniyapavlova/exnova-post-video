@@ -40,7 +40,7 @@
 			],
 			items2: [
 				{
-					text: 'Follow Exnova',
+					text: 'Ikuti Exnova',
 					additional: [
 						{ text: 'Facebook', link: 'https://facebook.com/exnova.en/' },
 						{ text: 'Instagram', link: 'https://www.instagram.com/exnova_trading/' }
@@ -48,7 +48,7 @@
 				},
 				{
 					text: 'Tag 3 teman di postingan kompetisi ini',
-					additional: [{ text: 'View post', link: 'https://facebook.com/exnova.en/' }]
+					additional: [{ text: 'Lihat Postingan', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Siap ngonten dan tanda tangani perjanjiannya' },
 				{
@@ -63,6 +63,14 @@
 <svelte:head>
 	<title>Exnova - Posting video di sosmed, dapatkan $50</title>
 	<meta name="description" content="Exnova - Posting video di sosmed, dapatkan $50" />
+	<meta property="og:title" content="Exnova - Posting video" />
+	<meta property="og:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta property="og:image" content="/src/lib/images/fb_meta_img_id.jpg" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Exnova - Posting video" />
+	<meta name="twitter:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_id.jpg" />
 </svelte:head>
 
 <AllBlocks lang="id" content={id_content} />

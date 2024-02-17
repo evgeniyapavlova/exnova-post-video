@@ -1,7 +1,6 @@
 <script>
-	import LogoSvg from './svg/LogoSvg.svelte';
-	import violet_2_img from '$lib/images/violet_2.png';
-	import blue_img from '$lib/images/blue.png';
+	import webp_img from '$lib/images/img_block_2.webp';
+	import jpg_img from '$lib/images/img_block_2.png';
 
 	export let content;
 	const { title, highlight, text } = content;
@@ -15,30 +14,15 @@
 			<div class="inner-text">{text}</div>
 		</div>
 		<div class="right-block">
-			<img src={violet_2_img} alt="Violet icon" class="abs-img img-violet" />
-			<img src={blue_img} alt="Blue icon" class="abs-img img-blue" />
-			<div class="logo-image">
-				<LogoSvg height={150} width={150} />
-			</div>
+			<picture>
+				<source srcset={webp_img} type="image/webp" />
+				<img src={jpg_img} alt="Exnova logo" />
+			</picture>
 		</div>
 	</div>
 </div>
 
 <style>
-	.img-violet {
-		right: 7px;
-		bottom: -24px;
-		transform: rotate(180deg);
-	}
-	.img-blue {
-		left: 13px;
-		top: 37%;
-		width: 50px;
-	}
-	.abs-img {
-		position: absolute;
-		z-index: 0;
-	}
 	.inner-container {
 		padding: 48px;
 		background-image: linear-gradient(228deg, rgb(174, 111, 252), rgb(89, 117, 255));
@@ -69,23 +53,21 @@
 	}
 	.right-block {
 		position: relative;
+		max-width: 27%;
 	}
-	.logo-image {
-		width: 240px;
-		height: 240px;
-		background: #fff;
-		border-radius: 60px;
-		box-shadow:
-			inset rgba(255, 255, 255, 0.2) 8px 8px 18px 5px,
-			inset rgba(0, 0, 0, 0.3) -8px -8px 18px 5px;
-		transform: skew(5deg, -6deg);
-		margin: 0 52px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-		z-index: 1;
+
+	.right-block picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
+
+	@media only screen and (max-width: 1300px) {
+		.right-block {
+			max-width: 35%;
+		}
+	}
+
 	@media only screen and (max-width: 950px) {
 		.inner-container {
 			margin: 60px 0;
@@ -96,8 +78,9 @@
 			max-width: 100%;
 			margin-bottom: 48px;
 		}
-		.logo-image {
+		.right-block {
 			margin: 0 auto;
+			max-width: 70%;
 		}
 	}
 
