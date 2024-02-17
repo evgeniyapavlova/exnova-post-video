@@ -1,4 +1,6 @@
 <script>
+	import fb_meta_img_en from '$lib/images/fb_meta_img_en.jpg';
+	import tw_meta_img_en from '$lib/images/tw_meta_img_en.jpg';
 	import AllBlocks from '../components/AllBlocks.svelte';
 
 	const en_content = {
@@ -65,12 +67,12 @@
 	<meta name="description" content="Exnova - Post a video on social media, get $50" />
 	<meta property="og:title" content="Exnova - Post a video" />
 	<meta property="og:description" content="Post a video on social media, get $50" />
-	<meta property="og:image" content="/src/lib/images/fb_meta_img_en.jpg" />
+	<meta property="og:image" content={fb_meta_img_en} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Post a video" />
 	<meta name="twitter:description" content="Post a video on social media, get $50" />
-	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_en.jpg" />
+	<meta name="twitter:image" content={tw_meta_img_en} />
 </svelte:head>
 
 <AllBlocks lang="en" content={en_content} />

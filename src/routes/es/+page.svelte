@@ -1,4 +1,6 @@
 <script>
+	import fb_meta_img_es from '$lib/images/fb_meta_img_es.jpg';
+	import tw_meta_img_es from '$lib/images/tw_meta_img_es.jpg';
 	import AllBlocks from '../../components/AllBlocks.svelte';
 
 	const es_content = {
@@ -42,13 +44,13 @@
 				{
 					text: 'Siga a Exnova',
 					additional: [
-						{ text: 'Facebook', link: 'https://www.facebook.com/iqoptioneu/' },
-						{ text: 'Instagram', link: 'https://instagram.com/iqoption_official' }
+						{ text: 'Facebook', link: 'https://facebook.com/exnova.en/' },
+						{ text: 'Instagram', link: 'https://www.instagram.com/exnova_trading/' }
 					]
 				},
 				{
 					text: 'Etiqueta a 3 amigos en nuestra publicación del concurso',
-					additional: [{ text: 'Ver publicacion', link: 'https://www.facebook.com/iqoptioneu/' }]
+					additional: [{ text: 'Ver publicacion', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Crea un vídeo y firma el acuerdo' },
 				{
@@ -68,12 +70,12 @@
 	<meta name="description" content="Exnova - Publica un vídeo en redes sociales y ganar US$ 50" />
 	<meta property="og:title" content="Exnova - Publica un vídeo" />
 	<meta property="og:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
-	<meta property="og:image" content="/src/lib/images/fb_meta_img_es.jpg" />
+	<meta property="og:image" content={fb_meta_img_es} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Publica un vídeo" />
 	<meta name="twitter:description" content="Publica un vídeo en redes sociales y ganar US$ 50" />
-	<meta name="twitter:image" content="/src/lib/images/tw_meta_img_es.jpg" />
+	<meta name="twitter:image" content={tw_meta_img_es} />
 </svelte:head>
 
 <AllBlocks lang="es" content={es_content} />
