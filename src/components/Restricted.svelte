@@ -1,7 +1,9 @@
-<div class="wrap reg" id="restricted-wrap">
-	<div class="group-text">
-		<div class="title-reg">We cannot redirect you to the requested page</div>
-		<div class="text-2">We sincerely apologize for the inconvenience.</div>
+<div class="reg">
+	<div class="wrap" id="restricted-wrap">
+		<div class="group-text">
+			<div class="title-reg">We cannot redirect you to the requested page</div>
+			<div class="text-2">We sincerely apologize for the inconvenience.</div>
+		</div>
 	</div>
 </div>
 
@@ -25,6 +27,7 @@
 		gap: 20px;
 	}
 	.wrap {
+		box-sizing: border-box;
 		height: 100%;
 		background: white;
 		color: #141822;

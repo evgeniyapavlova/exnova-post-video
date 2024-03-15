@@ -65,7 +65,7 @@
 			flex-wrap: wrap;
 			gap: 32px 32px;
 			justify-content: center;
-			margin-bottom: 96px;
+			margin-bottom: 64px;
 		}
 	}
 
@@ -77,7 +77,13 @@
 			width: 100%;
 		}
 		.wrap {
-			gap: 32px 0;
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		.item {
+			max-width: 100%;
 		}
 	}
 </style>
