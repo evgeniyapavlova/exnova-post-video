@@ -66,7 +66,7 @@
 						<LogoSvg height={26} width={26} />
 					</div>
 					<div class="text">
-						<div class="text-money">$50</div>
+						<div class="text-money">$15</div>
 						<p>{income}</p>
 					</div>
 				</div>

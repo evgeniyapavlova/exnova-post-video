@@ -67,3 +67,20 @@ button {
 .gray-block-text span {
 	color: var(--color-exnova-highlight);
 }
+
+/* Styles for restricted countries */
+.restricted .reg {
+	display: block;
+}
+
+.restricted .non-reg {
+	display: none;
+}
+
+body:not(.restricted) .non-reg {
+	display: block;
+}
+
+body:not(.restricted) .reg {
+	display: none;
+}

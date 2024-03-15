@@ -4,10 +4,10 @@
 	import AllBlocks from '../../components/AllBlocks.svelte';
 
 	const pt_content = {
-		btn: 'Ganhe 50$',
+		btn: 'Ganhe 15$',
 		block1: {
 			h1: 'Poste um vídeo<br /> nas redes sociais&nbsp;e',
-			h1_span: 'ganhe US$ 50',
+			h1_span: 'ganhe US$ 15',
 			h2: 'Publique um vídeo em suas redes sociais com a hashtag <span>#InvestwithExnova</span> e receba uma recompensa em sua conta de negociação',
 			income: 'Sua renda'
 		},
@@ -67,16 +67,16 @@
 </script>
 
 <svelte:head>
-	<title>Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50</title>
-	<meta name="description" content="Exnova - Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<title>Exnova - Poste um vídeo nas redes sociais e ganhe US$ 15</title>
+	<meta name="description" content="Exnova - Poste um vídeo nas redes sociais e ganhe US$ 15" />
 
 	<meta property="og:title" content="Exnova - Poste um vídeo" />
-	<meta property="og:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta property="og:description" content="Poste um vídeo nas redes sociais e ganhe US$ 15" />
 	<meta property="og:image" content={fb_meta_img_pt} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Poste um vídeo" />
-	<meta name="twitter:description" content="Poste um vídeo nas redes sociais e ganhe US$ 50" />
+	<meta name="twitter:description" content="Poste um vídeo nas redes sociais e ganhe US$ 15" />
 	<meta name="twitter:image" content={tw_meta_img_pt} />
 </svelte:head>
 

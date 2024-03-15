@@ -4,10 +4,10 @@
 	import AllBlocks from '../../components/AllBlocks.svelte';
 
 	const id_content = {
-		btn: 'Dapatkan $50',
+		btn: 'Dapatkan $15',
 		block1: {
 			h1: 'Posting video<br />di&nbsp;sosmed,',
-			h1_span: 'dapatkan&nbsp;$50',
+			h1_span: 'dapatkan&nbsp;$15',
 			h2: 'Posting video di sosmed dengan hashtag <span>#InvestwithExnova</span> dan dapatkan reward di dalam akun trading kamu',
 			income: 'Pendapatanmu'
 		},
@@ -63,15 +63,15 @@
 </script>
 
 <svelte:head>
-	<title>Exnova - Posting video di sosmed, dapatkan $50</title>
-	<meta name="description" content="Exnova - Posting video di sosmed, dapatkan $50" />
+	<title>Exnova - Posting video di sosmed, dapatkan $15</title>
+	<meta name="description" content="Exnova - Posting video di sosmed, dapatkan $15" />
 	<meta property="og:title" content="Exnova - Posting video" />
-	<meta property="og:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta property="og:description" content="Posting video di sosmed, dapatkan $15" />
 	<meta property="og:image" content={fb_meta_img_id} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Posting video" />
-	<meta name="twitter:description" content="Posting video di sosmed, dapatkan $50" />
+	<meta name="twitter:description" content="Posting video di sosmed, dapatkan $15" />
 	<meta name="twitter:image" content={tw_meta_img_id} />
 </svelte:head>
 

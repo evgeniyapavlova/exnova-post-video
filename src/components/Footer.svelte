@@ -1,9 +1,8 @@
 <script>
-	import { page } from '$app/stores';
 	let currentYear = new Date().getFullYear();
 
-	const pathArray = $page.url.pathname.split('/');
-	const currentLang = pathArray[pathArray.length - 1] || 'en';
+	export let lang;
+
 	const langs_map = {
 		en: {
 			text1:
@@ -95,13 +94,13 @@
 	<div class="footer-middle">
 		<div class="container">
 			<p>
-				{langs_map[currentLang].text1}
+				{langs_map[lang].text1}
 			</p>
 			<p style="margin-top: 40px; margin-bottom: 16px;">
 				Digital Smart LLC. Address: Lighthouse Trust Nevis Ltd, Suite 1, A.L. Evelyn Ltd Building,
 				Main Street, Charlestown, Nevis
 			</p>
-			<p>{@html langs_map[currentLang].text2}</p>
+			<p>{@html langs_map[lang].text2}</p>
 		</div>
 	</div>
 	<div class="footer-bottom">
@@ -111,13 +110,13 @@
 			</div>
 			<div class="terms-links">
 				<a href="https://affstore.com/en/lp/exnova/" target="_blank" alt="Affiliate Program"
-					>{langs_map[currentLang].aff_program}</a
+					>{langs_map[lang].aff_program}</a
 				>
 				<a href="https://exnova.com/terms/privacy-policy" target="_blank" alt="Privacy Policy"
-					>{langs_map[currentLang].privacy}</a
+					>{langs_map[lang].privacy}</a
 				>
 				<a href="https://exnova.com/terms/terms-conditions" target="_blank" alt="Terms & Conditions"
-					>{@html langs_map[currentLang].terms}</a
+					>{@html langs_map[lang].terms}</a
 				> <a href="mailto:support@exnova.com">support@exnova.com</a>
 			</div>
 		</div>

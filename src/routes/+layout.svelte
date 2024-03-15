@@ -1,12 +1,11 @@
 <script>
-	import Footer from '../components/Footer.svelte';
+	import Restricted from '../components/Restricted.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
+	<Restricted />
 	<slot />
-
-	<Footer />
 </div>
 
 <style>

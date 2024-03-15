@@ -4,10 +4,10 @@
 	import AllBlocks from '../components/AllBlocks.svelte';
 
 	const en_content = {
-		btn: 'Get 50$',
+		btn: 'Get 15$',
 		block1: {
 			h1: 'Post a video <br/>on social media,',
-			h1_span: 'get $50',
+			h1_span: 'get $15',
 			h2: 'Post a video to your social media with a hashtag <span>#InvestwithExnova</span> and get a reward on your trading account',
 			income: 'Your income'
 		},
@@ -63,15 +63,15 @@
 </script>
 
 <svelte:head>
-	<title>Exnova - Post a video on social media, get $50</title>
-	<meta name="description" content="Exnova - Post a video on social media, get $50" />
+	<title>Exnova - Post a video on social media, get $15</title>
+	<meta name="description" content="Exnova - Post a video on social media, get $15" />
 	<meta property="og:title" content="Exnova - Post a video" />
-	<meta property="og:description" content="Post a video on social media, get $50" />
+	<meta property="og:description" content="Post a video on social media, get $15" />
 	<meta property="og:image" content={fb_meta_img_en} />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Exnova - Post a video" />
-	<meta name="twitter:description" content="Post a video on social media, get $50" />
+	<meta name="twitter:description" content="Post a video on social media, get $15" />
 	<meta name="twitter:image" content={tw_meta_img_en} />
 </svelte:head>
 
