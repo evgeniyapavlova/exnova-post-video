@@ -53,5 +53,6 @@
 		padding: 14px 48px;
 		border-radius: 8px;
 		line-height: 28px;
+		display: inline-block;
 	}
 </style>
