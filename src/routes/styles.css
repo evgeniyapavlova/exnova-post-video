@@ -123,3 +123,9 @@ body:not(.restricted) .reg {
 	height: 100%;
 	object-fit: cover;
 }
+
+.block-3 .item img {
+	width: 145px;
+	display: block;
+	margin-bottom: 24px;
+}
