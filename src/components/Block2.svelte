@@ -1,6 +1,7 @@
 <script>
 	import webp_img from '$lib/images/img_block_2.webp';
 	import jpg_img from '$lib/images/img_block_2.png';
+	import LazyImage from './LazyImage.svelte';
 
 	export let content;
 	const { title, highlight, text } = content;
@@ -16,7 +17,7 @@
 		<div class="right-block">
 			<picture>
 				<source srcset={webp_img} type="image/webp" />
-				<img src={jpg_img} alt="Exnova logo" />
+				<LazyImage src={jpg_img} alt="Exnova logo" />
 			</picture>
 		</div>
 	</div>
@@ -54,12 +55,6 @@
 	.right-block {
 		position: relative;
 		max-width: 27%;
-	}
-
-	.right-block picture img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 
 	@media only screen and (max-width: 1300px) {

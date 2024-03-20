@@ -1,4 +1,6 @@
 <script>
+	import LazyImage from './LazyImage.svelte';
+
 	import Button_50 from './Button_50.svelte';
 	import LogoSvg from './svg/LogoSvg.svelte';
 
@@ -52,15 +54,19 @@
 				<Button_50 text={btn} />
 			</div>
 			<div class="video-preview">
-				<div class="picture-wrap">
+				<div class="picture-wrap-header">
 					<picture>
 						<source srcset={images_map[lang].webp} type="image/webp" />
-						<img src={images_map[lang].jpg} alt="A girl with a laptop" />
+						<LazyImage alt="The girl with a laptop" src={images_map[lang].jpg} />
 					</picture>
 				</div>
-				<img src={yellow_img} alt="Yellow icon" class="abs-img img-yellow" />
-				<img src={pink_img} alt="Pink icon" class="abs-img img-pink" />
-				<img src={violet_img} alt="Violet icon" class="abs-img img-violet" />
+
+				<LazyImage src={yellow_img} alt="Yellow icon" className="abs-img img-yellow" />
+
+				<LazyImage src={pink_img} alt="Pink icon" className="abs-img img-pink" />
+
+				<LazyImage src={violet_img} alt="Violet icon" className="abs-img img-violet" />
+
 				<div class="income-block">
 					<div class="logo-wrap">
 						<LogoSvg height={26} width={26} />
@@ -82,6 +88,7 @@
 		border-bottom-left-radius: 40px;
 		border-bottom-right-radius: 40px;
 	}
+
 	h1 {
 		color: #fff;
 		font-size: 48px;
@@ -96,7 +103,7 @@
 		color: var(--color-exnova-highlight);
 	}
 
-	.picture-wrap {
+	.picture-wrap-header {
 		border-radius: 35px;
 		width: 340px;
 		height: 510px;
@@ -106,34 +113,10 @@
 		background-color: rgba(255, 255, 255, 0.2);
 	}
 
-	.picture-wrap picture img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
 	.video-preview {
 		position: relative;
 	}
-	.abs-img {
-		position: absolute;
-		z-index: 0;
-	}
-	.img-yellow {
-		max-width: 140px;
-		left: -67px;
-		top: -61px;
-	}
-	.img-pink {
-		max-width: 150px;
-		left: -155px;
-		top: -32px;
-	}
-	.img-violet {
-		max-width: 96px;
-		right: 45px;
-		bottom: -34px;
-	}
+
 	h2 {
 		line-height: 1.5;
 		color: var(--color-h2);

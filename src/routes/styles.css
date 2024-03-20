@@ -88,3 +88,38 @@ body:not(.restricted) .non-reg {
 body:not(.restricted) .reg {
 	display: none;
 }
+
+.picture-wrap-header picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.block_1 .abs-img {
+	position: absolute;
+	z-index: 0;
+}
+
+.block_1 .img-yellow {
+	max-width: 140px;
+	left: -67px;
+	top: -61px;
+}
+
+.block_1 .img-pink {
+	max-width: 150px;
+	left: -155px;
+	top: -32px;
+}
+
+.block_1 .img-violet {
+	max-width: 96px;
+	right: 45px;
+	bottom: -34px;
+}
+
+.right-block picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
