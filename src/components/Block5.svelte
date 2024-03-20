@@ -1,5 +1,6 @@
 <script>
-	import Button_50 from './Button_50.svelte';
+	// import Button_50 from './Button_50.svelte';
+	import SubmitVideoForm from './SubmitVideoForm/SubmitVideoForm.svelte';
 
 	export let content, btn;
 	const { text1, text2 } = content;
@@ -8,11 +9,13 @@
 <div class="wrap">
 	<div class="container">
 		<div class="inner-container">
-			<div class="text1">
-				{text1}
+			<div class="wrap-text">
+				<div class="text1">
+					{text1}
+				</div>
+				<div class="text2">{text2}</div>
+				<SubmitVideoForm {btn} />
 			</div>
-			<div class="text2">{text2}</div>
-			<Button_50 text={btn} />
 		</div>
 	</div>
 </div>
@@ -24,20 +27,22 @@
 	}
 	.inner-container {
 		background-color: var(--color-bg-0);
-		padding: 100px 48px;
+		padding: 48px 48px;
 		border-radius: 40px;
 		color: #fff;
 		background-image: url('/src/lib/images/bgr_block_5.webp');
-		background-position: 100% 40%;
+		background-position: 100% 100%;
 		background-size: 650px;
 		background-repeat: no-repeat;
+	}
+	.wrap-text {
+		max-width: calc(100% - 600px);
 	}
 	.text1 {
 		font-size: 24px;
 		line-height: 1.3;
 		margin-bottom: 12px;
 		font-weight: 600;
-		max-width: calc(100% - 600px);
 	}
 	.text2 {
 		font-weight: 700;
@@ -57,7 +62,7 @@
 			background-position: 100% 100%;
 			background-size: 55%;
 		}
-		.text1 {
+		.wrap-text {
 			max-width: 45%;
 		}
 	}
@@ -76,7 +81,7 @@
 			background-size: 46%;
 		}
 
-		.text1 {
+		.wrap-text {
 			max-width: 54%;
 		}
 
@@ -96,7 +101,7 @@
 	}
 
 	@media only screen and (max-width: 630px) {
-		.text1 {
+		.wrap-text {
 			max-width: 100%;
 		}
 		.inner-container {

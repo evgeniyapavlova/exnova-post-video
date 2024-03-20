@@ -2,22 +2,24 @@
 	import IqOptionLogo from './svg/IQOptionLogo.svelte';
 </script>
 
-<div class="wrap reg" id="wrap-restricted">
-	<IqOptionLogo />
-	<div class="group-mid">
-		<div class="group-text">
-			<div class="title">We cannot redirect you to the requested page</div>
-			<div class="text">
-				We are sorry to say that IQ Option doesn't cooperate with this particular website in your
-				region. If you believe that there is a mistake, you can proceed to the broker's website.
+<div class="reg">
+	<div class="wrap">
+		<IqOptionLogo />
+		<div class="group-mid">
+			<div class="group-text">
+				<div class="title">We cannot redirect you to the requested page</div>
+				<div class="text">
+					We are sorry to say that IQ Option doesn't cooperate with this particular website in your
+					region. If you believe that there is a mistake, you can proceed to the broker's website.
+				</div>
+			</div>
+			<div class="group-btn">
+				<a href="//iqoption.com/" class="button" data-test-id="redirect-button">Go to IQ Option</a>
+				<div class="text-2">We sincerely apologize for the inconvenience.</div>
 			</div>
 		</div>
-		<div class="group-btn">
-			<a href="//iqoption.com/" class="button" data-test-id="redirect-button">Go to IQ Option</a>
-			<div class="text-2">We sincerely apologize for the inconvenience.</div>
-		</div>
+		<div></div>
 	</div>
-	<div></div>
 </div>
 
 <style>
@@ -68,7 +70,7 @@
 		align-items: center;
 		gap: 20px;
 	}
-	#wrap-restricted {
+	.wrap {
 		height: 100%;
 		background: white;
 		color: #141822;
