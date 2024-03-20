@@ -27,6 +27,10 @@ body {
 	min-width: 400px;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 p {
 	margin: 0;
 }

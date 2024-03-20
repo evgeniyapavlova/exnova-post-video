@@ -1,39 +1,47 @@
 <script>
+	import { slide } from 'svelte/transition';
+
+	import Loader from './Loader.svelte';
+	import Checkmark from '../svg/Checkmark.svelte';
+
 	export let btn;
 	let country = '';
 	let email = '';
 	let videoLink = '';
 	let agreeChecked = false;
+	let loading = false;
+	let success = false;
 
-	async function handleSubmit() {
-		const formData = { country, email, videoLink };
+	async function handleSubmit(event) {
+		loading = true;
+		event.preventDefault();
+		var requestOptions = {
+			method: 'POST',
+			redirect: 'follow'
+		};
 
-		try {
-			const response = await fetch(
-				'https://script.google.com/macros/s/AKfycbzkjaYAEYWqV6cHIoHvZxML7Onzl8-31kAcBMiMuzyoiWGQbnzgyhOdseZVE_AVFLuZ/exec',
-				{
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json'
-					},
-					body: JSON.stringify(formData)
-				}
-			);
-
-			if (response.ok) {
+		fetch(
+			`https://script.google.com/macros/s/AKfycbytjI4GW0eS4wSrIHTmSKS22SyEZcNeB1UseC7S4PXL9fIEu1VcUYxxVrufJrROOsaT/exec?country=${country}&email=${email}&videoLink=${videoLink}`,
+			requestOptions
+		)
+			.then((response) => response.text())
+			.then((result) => {
+				console.log(result);
+				loading = false;
+				success = true;
 				country = '';
 				email = '';
 				videoLink = '';
-			} else {
-				console.error('Failed to submit form data');
-			}
-		} catch (error) {
-			console.error('Error submitting form data:', error);
-		}
+			})
+			.catch((error) => {
+				alert('Something went wrong, please try again.');
+				loading = false;
+			});
 	}
 </script>
 
-<form on:submit={handleSubmit}>
+<form class={loading ? 'loading' : ''}>
+	{#if success}<div transition:slide class="success"><Checkmark /></div>{/if}
 	<input type="text" placeholder="Country" bind:value={country} />
 
 	<input type="email" placeholder="Email" bind:value={email} />
@@ -43,12 +51,39 @@
 		>I agree to the Terms and Conditions and Privacy Policy</label
 	>
 
-	<button type="submit" disabled={!agreeChecked || !videoLink || !email || !country}>{btn}</button>
+	<button
+		type="submit"
+		disabled={!agreeChecked || !videoLink || !email || !country || loading}
+		on:click={handleSubmit}
+	>
+		{#if loading}
+			<Loader />
+		{/if}
+		{btn}
+	</button>
 </form>
 
 <style>
+	.success {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--color-bg-0);
+		z-index: 10;
+	}
+	.loading button {
+		background-color: rgba(2, 129, 227, 0.5);
+		color: transparent !important;
+	}
+
 	form {
 		max-width: 300px;
+		position: relative;
 	}
 	.checkbox-label {
 		color: #717883;
@@ -75,7 +110,10 @@
 		padding: 12px;
 	}
 	button {
-		display: block;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		margin-top: 24px;
 		background-color: var(--color-exnova-highlight);
 		color: var(--color-bg-1);
@@ -85,6 +123,7 @@
 		border-radius: 8px;
 		line-height: 28px;
 		cursor: pointer;
+		transition: background-color 0.2s ease-out;
 	}
 	button:disabled {
 		background-color: rgba(2, 129, 227, 0.5);
