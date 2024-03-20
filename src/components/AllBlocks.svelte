@@ -5,6 +5,7 @@
 	import Block2 from '../components/Block2.svelte';
 	import Block3 from '../components/Block3.svelte';
 	import Block4 from '../components/Block4.svelte';
+	import Block5_0 from '../components/Block5_0.svelte';
 	import Block5 from '../components/Block5.svelte';
 
 	export let content, lang;
@@ -16,6 +17,7 @@
 	<Block2 content={content.block2} />
 	<Block3 content={content.block3} />
 	<Block4 content={content.block4} />
+	<Block5_0 {lang} />
 	<Block5 content={content.block5} btn={content.btn} />
 	<Footer {lang} />
 </div>
