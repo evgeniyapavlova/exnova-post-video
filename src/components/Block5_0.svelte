@@ -1,7 +1,13 @@
+<script>
+	export let lang;
+	let tempLang = lang;
+	if (lang === 'id' || !lang) tempLang = 'en';
+</script>
+
 <div class="iframe-container">
 	<iframe
 		title="Exnova registration form"
-		src="https://exnova.org/lp/exnova-regframe-light/en/"
+		src="https://exnova.org/lp/exnova-regframe-light/{tempLang}/"
 		frameborder="0"
 		allowfullscreen
 	></iframe>
@@ -12,7 +18,7 @@
 		position: relative;
 		width: 100%;
 		height: 0;
-		padding-bottom: calc(950px / 16 * 9);
+		padding-bottom: 970px;
 	}
 	.iframe-container iframe {
 		position: absolute;
