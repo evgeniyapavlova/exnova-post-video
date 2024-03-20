@@ -1,4 +1,4 @@
-<span class="loader"></span>
+<span class="loader"> </span>
 
 <style>
 	.loader {
@@ -12,7 +12,7 @@
 			-12px 0 #fff;
 		position: relative;
 		animation: flash 1s ease-out infinite alternate;
-		margin-left: 12px;
+		left: 43%;
 	}
 
 	@keyframes flash {

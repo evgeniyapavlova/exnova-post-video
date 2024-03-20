@@ -40,7 +40,7 @@
 	});
 </script>
 
-<a href="https://iqoption.com">
+<a href="#video-form">
 	{text}
 </a>
 

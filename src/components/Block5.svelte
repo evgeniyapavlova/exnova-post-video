@@ -8,7 +8,7 @@
 
 <div class="wrap">
 	<div class="container">
-		<div class="inner-container">
+		<div class="inner-container" id="video-form">
 			<div class="wrap-text">
 				<div class="text1">
 					{text1}
