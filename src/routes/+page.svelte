@@ -6,13 +6,13 @@
 	const en_content = {
 		btn: 'Get 15$',
 		block1: {
-			h1: 'Post a video <br/>on social media,',
-			h1_span: 'get $15',
-			h2: 'Post a video to your social media with a hashtag <span>#InvestwithExnova</span> and get a reward on your trading account',
+			h1: 'Exnova is offering you the chance to',
+			h1_span: 'kickstart your trading career.',
+			h2: 'If you have a phone and you are active in social media we will support your trading journey. You just need to mention us with the hashtag <span>#ExnovaInvest</span>.',
 			income: 'Your income'
 		},
 		block2: {
-			title: 'Exnova is paying for your social media videos',
+			title: 'Exnova is offering you the chance to kickstart your trading career',
 			highlight:
 				'Are you active on social media and enjoy creating video content?<br /> Congrats, you’re in for our pay-per-video offer!',
 			text: 'Make a 15-60 second video on trading with Exnova according to our guidelines and share it throughout social networks. In return, we’ll credit a handsome reward to your account — use it for trading or withdraw!'
@@ -49,12 +49,12 @@
 					]
 				},
 				{
-					text: 'Tag 3 friends in our competition post',
+					text: 'Tag 5 friends in our competition post',
 					additional: [{ text: 'View post', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Create a video and sign the agreement' },
 				{
-					text: 'Post the video on your social media with a hashtag <span>#InvestwithExnova</span>'
+					text: 'Post the video on your social media with a hashtag <span>#ExnovaInvest</span>'
 				}
 			]
 		},
