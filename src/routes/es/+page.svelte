@@ -6,13 +6,13 @@
 	const es_content = {
 		btn: 'Gana 15$',
 		block1: {
-			h1: 'Publica un vídeo<br /> en redes sociales&nbsp;y',
-			h1_span: 'ganar US$&nbsp;15',
-			h2: 'Publica un vídeo en tus redes sociales con el hashtag <span>#InvestwithExnova</span> y recibe una recompensa en tu cuenta de negociación.',
+			h1: 'Exnova le ofrece<br /> la oportunidad de',
+			h1_span: 'impulsar<br /> su carrera comercial',
+			h2: 'Si tiene un teléfono y está activo en las redes sociales, lo apoyaremos en su viaje comercial.<br />Sólo necesitas mencionarnos con el hashtag <span>#ExnovaInvest</span>.',
 			income: 'Tus ingresos'
 		},
 		block2: {
-			title: 'Exnova paga por sus videos de redes sociales',
+			title: 'Exnova le ofrece la oportunidad de impulsar su carrera comercial.',
 			highlight:
 				'¿Está activo en las redes sociales y disfruta creando contenido de video?<br />¡Felicitaciones, estás participando en nuestra oferta de pago por video!',
 			text: 'Haga un video de 15 a 60 segundos sobre cómo operar con Exnova de acuerdo con nuestras pautas y compártalo en las redes sociales. A cambio, acreditaremos una bonita recompensa en su cuenta: ¡úsela para operar o retirar dinero!'
@@ -49,12 +49,12 @@
 					]
 				},
 				{
-					text: 'Etiqueta a 3 amigos en nuestra publicación del concurso',
+					text: 'Etiqueta a 5 amigos en nuestra publicación del concurso',
 					additional: [{ text: 'Ver publicacion', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Crea un vídeo y firma el acuerdo' },
 				{
-					text: 'Publica el vídeo en tus redes sociales con el hashtag <span>#InvestwithExnova</span>'
+					text: 'Publica el vídeo en tus redes sociales con el hashtag <span>#ExnovaInvest</span>'
 				}
 			]
 		},

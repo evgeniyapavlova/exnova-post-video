@@ -46,7 +46,7 @@
 			<div class="title">
 				<h1>
 					{@html h1}
-					<br /><span>{@html h1_span}</span>
+					<span>{@html h1_span}</span>
 				</h1>
 				<h2>
 					{@html h2}
@@ -91,7 +91,7 @@
 
 	h1 {
 		color: #fff;
-		font-size: 48px;
+		font-size: 42px;
 		line-height: 1.125;
 		letter-spacing: -0.3px;
 		font-weight: 700;
@@ -173,6 +173,11 @@
 		font-size: 12px;
 	}
 
+	@media only screen and (max-width: 950px) {
+		h1 {
+			font-size: 36px;
+		}
+	}
 	@media only screen and (max-width: 799px) {
 		.video-preview {
 			display: none;
@@ -206,10 +211,12 @@
 		}
 	}
 
-	@media only screen and (min-width: 1200px) {
+	@media only screen and (min-width: 1250px) {
 		h1 {
-			font-size: 64px;
+			font-size: 56px;
 		}
+	}
+	@media only screen and (min-width: 1200px) {
 		.inner-container {
 			align-items: flex-start;
 		}
