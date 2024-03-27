@@ -6,13 +6,13 @@
 	const id_content = {
 		btn: 'Dapatkan $15',
 		block1: {
-			h1: 'Posting video<br />di&nbsp;sosmed,',
-			h1_span: 'dapatkan&nbsp;$15',
-			h2: 'Posting video di sosmed dengan hashtag <span>#InvestwithExnova</span> dan dapatkan reward di dalam akun trading kamu',
+			h1: 'Exnova menawarkan Anda kesempatan untuk',
+			h1_span: 'memulai karir perdagangan Anda',
+			h2: 'Jika Anda memiliki ponsel dan aktif di media sosial, kami akan mendukung perjalanan trading Anda.<br />Anda hanya perlu menyebut kami dengan hashtag <span>#ExnovaInvest</span>.',
 			income: 'Pendapatanmu'
 		},
 		block2: {
-			title: 'Exnova bakalan bayar video kamu di sosmed!',
+			title: 'Exnova menawarkan Anda kesempatan untuk memulai karir perdagangan Anda',
 			highlight:
 				'Apakah kamu aktif di sosmed dan suka ngonten?<br />Berarti kamu bisa join tawaran pay-per-video kami!',
 			text: 'Caranya, buat 15-60 detik video trading di Exnova sesuai guidelines yang ada dan post di sosmed kamu. Nanti kamu akan mendapatkan reward yang kece banget ke dalam akun trading kamu, yang bisa kamu pakai trading, ataupun langsung withdraw! '
@@ -49,12 +49,12 @@
 					]
 				},
 				{
-					text: 'Tag 3 teman di postingan kompetisi ini',
+					text: 'Tag 5 teman di postingan kompetisi ini',
 					additional: [{ text: 'Lihat Postingan', link: 'https://facebook.com/exnova.en/' }]
 				},
 				{ text: 'Siap ngonten dan tanda tangani perjanjiannya' },
 				{
-					text: 'Posting di sosmed dengan hashtag <span>#InvestwithExnova</span>'
+					text: 'Posting di sosmed dengan hashtag <span>#ExnovaInvest</span>'
 				}
 			]
 		},
