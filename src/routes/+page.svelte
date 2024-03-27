@@ -6,13 +6,13 @@
 	const en_content = {
 		btn: 'Get 15$',
 		block1: {
-			h1: 'Exnova is offering you the chance to',
-			h1_span: 'kickstart your trading career.',
-			h2: 'If you have a phone and you are active in social media we will support your trading journey. You just need to mention us with the hashtag <span>#ExnovaInvest</span>.',
+			h1: 'Exnova is offering you<br /> the chance to',
+			h1_span: 'kickstart<br /> your trading career',
+			h2: 'If you have a phone and you are active in social media we will support your trading journey.<br />You just need to mention us with the hashtag <span>#ExnovaInvest</span>.',
 			income: 'Your income'
 		},
 		block2: {
-			title: 'Exnova is offering you the chance to kickstart your trading career',
+			title: 'Exnova is offering you the chance to kickstart your trading career.',
 			highlight:
 				'Are you active on social media and enjoy creating video content?<br /> Congrats, you’re in for our pay-per-video offer!',
 			text: 'Make a 15-60 second video on trading with Exnova according to our guidelines and share it throughout social networks. In return, we’ll credit a handsome reward to your account — use it for trading or withdraw!'
